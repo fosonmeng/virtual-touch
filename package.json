@@ -1,0 +1,33 @@
+{
+  "name": "virtual-touch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/virtual-touch.cjs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "serve -p 8000 ./",
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fosonmeng/virtual-touch.git"
+  },
+  "keywords": [
+    "touch"
+  ],
+  "author": "mhugh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fosonmeng/virtual-touch/issues"
+  },
+  "homepage": "https://github.com/fosonmeng/virtual-touch#readme",
+  "devDependencies": {
+    "rollup": "^1.1.0",
+    "rollup-plugin-buble": "^0.19.6",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "serve": "^10.1.1"
+  }
+}
