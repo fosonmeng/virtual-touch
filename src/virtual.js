@@ -14,7 +14,7 @@ export default class Virtual {
     if (!options) {
       options = {};
     }
-    this.eventAdaptor = options.eventAdaptor;
+    this.eventAdapter = options.eventAdapter;
     this.eventListeners = {};
   }
 
@@ -41,7 +41,7 @@ export default class Virtual {
 
 assign(Virtual.prototype, {
   [inputstart](e) {
-    const ve = new VirtualEvent(e, this.eventAdaptor);
+    const ve = new VirtualEvent(e, this.eventAdapter);
     if (inputstart in this.eventListeners) {
       each(this.eventListeners[inputstart], function(handler) {
         handler(ve);
@@ -49,7 +49,7 @@ assign(Virtual.prototype, {
     }
   },
   [inputmove](e) {
-    const ve = new VirtualEvent(e, this.eventAdaptor);
+    const ve = new VirtualEvent(e, this.eventAdapter);
     if (inputmove in this.eventListeners) {
       each(this.eventListeners[inputmove], function(handler) {
         handler(ve);
@@ -57,7 +57,7 @@ assign(Virtual.prototype, {
     }
   },
   [inputend](e) {
-    const ve = new VirtualEvent(e, this.eventAdaptor);
+    const ve = new VirtualEvent(e, this.eventAdapter);
     if (inputend in this.eventListeners) {
       each(this.eventListeners[inputend], function(handler) {
         handler(ve);
@@ -65,7 +65,7 @@ assign(Virtual.prototype, {
     }
   },
   [inputcancel](e) {
-    const ve = new VirtualEvent(e, this.eventAdaptor);
+    const ve = new VirtualEvent(e, this.eventAdapter);
     if (inputcancel in this.eventListeners) {
       each(this.eventListeners[inputcancel], function(handler) {
         handler(ve);

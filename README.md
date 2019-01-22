@@ -2,12 +2,12 @@ Virtual Touch
 =================
 
 Most of these are stolen from the good project https://github.com/hammerjs/hammer.js .
-But some modification and some logic is removed.
+But some modifications, and some logic is removed.
 
 ## What does this project do
 
 There is some environment where general `dom` is not available. Thus we have to
-write a decorator for some libraries. Otherwise we could write a polyfill for that
+write a decorator for libraries. Otherwise we could write a polyfill for that
 environment. But both these approachs are difficult on a platform like _wechat_.
 Then the library was refactored.
 
